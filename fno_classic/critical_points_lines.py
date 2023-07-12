@@ -143,8 +143,9 @@ def stream_lines(x,y,Fx,Fy,ind_adj, cmap='inferno'):
 
         # seed_points = np.array([[-2, -1, 0, 1, 2, -1], [-2, -1,  0, 1, 2, 2]])
         
-        del_t = .1 if c_type[ki] != 5 else .5
-        
+        # del_t = .1 if c_type[ki] != 5 else .5
+        del_t = 0.
+
         seed_points = np.array([ xc + v[0][0]*del_t , yc + v[1][0]*del_t])
         py.streamplot(x, y, Fx, Fy, color=F, linewidth=1, cmap=cmap, start_points=seed_points.T)
         # py.streamplot(x, y, Fx, Fy,  start_points=seed_points.T)

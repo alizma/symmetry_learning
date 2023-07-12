@@ -42,7 +42,7 @@ def detect_local_minima(arr):
     # http://www.scipy.org/doc/api_docs/SciPy.ndimage.morphology.html#binary_erosion
     
     eroded_background = morphology.binary_erosion(
-        background, structure=neighborhood, border_value=1)
+        background, structure=neighborhood, border_value=1, iterations=10)
     # 
     # we obtain the final mask, containing only peaks, 
     # by removing the background from the local_min mask
