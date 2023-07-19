@@ -109,7 +109,10 @@ def critical_point_type(x,y,Fx,Fy,ind_adj):
 def stream_lines(x,y,Fx,Fy,ind_adj, cmap='inferno'):
     
     F =  np.sqrt(Fx**2 + Fy**2)
-    text_map = ['Repelling Node', 'Attracting Node', 'Saddle Node', 'Repelling Focus','Attracting Focus', 'Center']
+    text_map = ['Attracting Node', 'Repelling Node', 'Saddle Node', 'Attracting Focus','Repelling Focus', 'Center']
+    # old: 
+    # text_map = ['Repelling Node', 'Attracting Node', 'Saddle Node', 'Repelling Focus','Attracting Focus', 'Center']
+
     color_map = ['#5c9090', '#ff756d', '#0f4c81',  '#e9b666','#f5b19c', '#85de77']
     
     
